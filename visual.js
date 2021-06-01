@@ -99,26 +99,19 @@ function coresGrafo() {
   for (let c of cores) {
     for (let n of vertices) {
       if (n.cor == "") {
-        neighborsHaveColor = false;
+        vizinhoTemCor = false;
         for (let adj of n.vizinhos) {
           if (c == adj.cor) {
-            neighborsHaveColor = true;
+            vizinhoTemCor = true;
             break;
           }
           counter++;
         }
-        if (!neighborsHaveColor) n.cor = c;
+        if (!vizinhoTemCor) n.cor = c;
       }
     }
   }
   
-  console.log("Counter: " + counter + " Nodes: " + vertices.length);
-  console.log(vertices);
-
-/*   console.log(vertices);
-    for (let n of vertices) {
-     n.cor = '#50baf1'
-    } */
   }
 
 
