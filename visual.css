@@ -2,6 +2,7 @@ body {
   background-color: #000;
   margin: auto;
   width: 800px;
+  position: relative;
 }
 h1{
   color: white;
@@ -159,4 +160,14 @@ text.contadorVizinhos {
   padding: 5px;
   text-anchor: middle;
   font-weight: bold;
+}
+
+.text-nomes{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.text-nomes p{
+  color: black;
 }

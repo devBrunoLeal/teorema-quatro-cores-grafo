@@ -79,10 +79,10 @@ function iniciarGrafo() {
         dist = Math.sqrt(deltaX * deltaX + deltaY * deltaY),
         normX = deltaX / dist,
         normY = deltaY / dist,
-        sourcePadding = 12;
-      targetPadding = 12;
-      (sourceX = d.fonte.x + sourcePadding * normX), (sourceY = d.fonte.y + sourcePadding * normY), (targetX = d.alvo.x - targetPadding * normX), (targetY = d.alvo.y - targetPadding * normY);
-      return "M" + sourceX + "," + sourceY + "L" + targetX + "," + targetY;
+        fontePadding = 12;
+      alvoPadding = 12;
+      (fonteX = d.fonte.x + fontePadding * normX), (fonteY = d.fonte.y + fontePadding * normY), (targetX = d.alvo.x - alvoPadding * normX), (targetY = d.alvo.y - alvoPadding * normY);
+      return "M" + fonteX + "," + fonteY + "L" + targetX + "," + targetY;
     });
 }
 
